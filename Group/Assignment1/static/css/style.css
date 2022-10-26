@@ -1,0 +1,26 @@
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    border-radius: 60px;
+    border: 1px rgb(0, 0, 0) solid;
+    padding: auto;
+    float: left;
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.text {
+    float: left;
+    height: auto;
+    padding-top: 60px;
+}
+
+table{
+    border: 0px solid transparent;
+}

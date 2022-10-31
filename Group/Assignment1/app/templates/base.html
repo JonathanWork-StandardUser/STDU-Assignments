@@ -11,14 +11,16 @@
     <body>
         <h1>Welcome to {{title}}</h1>
         <div class = "page-header">
-            <a href = "{{url_for('randDice') }}">Random Dice</a>
-            {% if current_user.is_anonymous %}
-            <a href = "{{url_for('login') }}">Login</a>
-            {% else %}
-            <a href="{{url_for('logout') }}">Logout</a>
-            {% endif %}
-            <a href = "{{url_for('swapCase') }}">Swap Case</a>
-            <a href = "{{url_for('plotDice') }}">Plot Dice</a>
+            <ul>
+                <li><a href = "{{url_for('randDice') }}">Random Dice</a></li>
+                {% if current_user.is_anonymous %}
+                <li><a href = "{{url_for('login') }}">Login</a></li>
+                {% else %}
+                <li><a href="{{url_for('logout') }}">Logout</a></li>
+                {% endif %}
+                <li><a href = "{{url_for('swapCase') }}">Swap Case</a></li>
+                <li><a href = "{{url_for('plotDice') }}">Plot Dice</a></li>
+            </ul>
         </div>
         <hr>
         {% with messages = get_flashed_messages() %}

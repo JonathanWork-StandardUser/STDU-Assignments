@@ -2,7 +2,11 @@
 
 {% block content %}
 
+        {% if current_user.is_anonymous %}
+        <h2>Welcome!</h2>
+        {% else %}
         <h2>Welcome, {{ current_user.username }}!</h2>
+        {% endif %}
 
         <h4>Table header here</h4> 
         <table>

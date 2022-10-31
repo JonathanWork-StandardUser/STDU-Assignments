@@ -5,6 +5,41 @@ h1 {
     padding: 10px;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6b1c1c;
+    overflow: hidden;
+    text-align: center;
+} 
+
+input[type=button], input[type=submit], input[type=reset]{
+    background-color: #6b1c1c;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+ul a {
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+}
+
+li a:hover {
+    background-color: #020205;
+}
+
 img {
     border-radius: 60px;
     border: 1px rgb(0, 0, 0) solid;
@@ -21,6 +56,6 @@ img {
     padding-top: 60px;
 }
 
-table{
+table {
     border: 0px solid transparent;
 }

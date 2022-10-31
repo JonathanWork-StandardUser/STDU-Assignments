@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/plotDice.css')}}">
-    <title>Dice Plot</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>My Plot of 100 Dice Rolls</h1>
     <img id = 'myImage'>
     <script>
@@ -15,5 +10,4 @@
         var imageTag = document.getElementById('myImage').src =  `static/images/${imageName}`;
 
     </script>
-</body>
-</html>
+{% endblock %}
